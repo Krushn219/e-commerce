@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Blog = require("../model/Blog");
 const fs = require("fs");
 const errorhandaler = require("../utils/errorhandaler");
 const uploadToCloudinary = require("../services/uploadCloudinary");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const cloudinary = require("cloudinary").v2;
-const path = require('path');
-
+const path = require("path");
 
 // create blogs
 
@@ -22,14 +21,14 @@ module.exports.createblogs = catchAsyncErrors(async (req, res) => {
     cloudinary_id: result.result.public_id,
   });
   if (!blogs) {
-    return res.status(500).send('blogs cannot be created')
+    return res.status(500).send("blogs cannot be created");
   }
   res.status(200).json({
     success: true,
     blogs,
     // result
   });
-})
+});
 
 //get all Blog
 module.exports.getallblogs = catchAsyncErrors(async (req, res) => {
@@ -40,30 +39,29 @@ module.exports.getallblogs = catchAsyncErrors(async (req, res) => {
     total: total,
     blogs,
   });
-})
+});
 
 //getSingle Blog
 module.exports.getsingleblogs = catchAsyncErrors(async (req, res, next) => {
-
-  let blog = await Blog.findById(req.query.id);
+  let blog = await Blog.findById(req.params.blogID);
   if (!blog) {
     return next(new errorhandaler("blogs not found", 404));
-  }
-  else {
+  } else {
     res.status(200).json({
       success: true,
       blog,
     });
   }
-})
+});
 
 //Update Blog
 module.exports.updateblogs = catchAsyncErrors(async (req, res) => {
-  let id = req.query.id;
+  let id = req.params.blogID;
   let blog = await Blog.findById(id);
   if (!blog) {
     return res.status(404).json({ msg: "Cannot found blogs.." });
   }
+
   // Delete image from cloudinary
   await cloudinary.uploader.destroy(blog.cloudinary_id);
   // Upload image to cloudinary
@@ -77,18 +75,18 @@ module.exports.updateblogs = catchAsyncErrors(async (req, res) => {
     cloudinary_id: result.public_id || blog.cloudinary_id,
   };
   const updateBlog = await Blog.findByIdAndUpdate(id, data, {
-    new: true
+    new: true,
   });
   res.status(200).json({
     success: true,
     msg: "Updated successfully...",
-    updateBlog
-  })
-})
+    updateBlog,
+  });
+});
 
 //Delete Blog
 module.exports.deleteblogs = catchAsyncErrors(async (req, res) => {
-  let id = req.query.id;
+  let id = req.params.blogID;
 
   // Find user by id
   let blogs = await Blog.findById(id);
@@ -97,13 +95,12 @@ module.exports.deleteblogs = catchAsyncErrors(async (req, res) => {
   await cloudinary.uploader.destroy(blogs.cloudinary_id);
 
   try {
-    const data = await Blog.findByIdAndDelete(req.query.id)
+    const data = await Blog.findByIdAndDelete(id);
     if (!data) {
-      return res.status(400).json({ message: 'blogs not found' })
+      return res.status(400).json({ message: "blogs not found" });
     }
-    return res.status(200).json({ message: 'blogs deleted successfully' })
+    return res.status(200).json({ message: "blogs deleted successfully" });
+  } catch (err) {
+    return res.status(500).json({ err });
   }
-  catch (err) {
-    return res.status(500).json({ err })
-  }
-})
+});

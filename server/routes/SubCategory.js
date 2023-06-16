@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 
 const {
   createSubCaregory,
@@ -6,66 +6,46 @@ const {
   deleteSingleSubCaregory,
   SingleSubCaregory,
   getSingleSubCaregory,
-  updateSubCaregory
-} = require('../controllers/subCategory');
+  updateSubCaregory,
+} = require("../controllers/subCategory");
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
 
 const router = express();
 
-// image
-
 const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
-const fs = require('fs');
 
-if (!fs.existsSync("./uploads")) {
-  fs.mkdirSync("./uploads");
-}
+//cloudinary configuration
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_API_KEY,
+  api_secret: process.env.CLOUD_API_SECRET,
+});
 
-var storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "./uploads")
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
-  },
-})
+// Multer storage configuration
+const storage = multer.diskStorage({});
 
-const upload = multer({ storage: storage }).single("image");
+// Multer upload instance
+const upload = multer({ storage });
+
 // create
-router
-  .route("/create")
-  .post(upload, createSubCaregory);
+router.route("/create").post(upload.single("image"), createSubCaregory);
 
-// get all 
-router
-  .route("/all")
-  .get(getAllSubCaregory);
+// get all
+router.route("/all").get(getAllSubCaregory);
 
-// get single 
+// get single
 
-router
-  .route('/single/:id')
-  .get(SingleSubCaregory);
+router.route("/single/:id").get(SingleSubCaregory);
 
+//Update single
 
-//Update single 
-
-router
-  .route('/update/:id')
-  .put(upload, updateSubCaregory);
+router.route("/update/:id").put(upload.single("image"), updateSubCaregory);
 
 //Delete single
 
-router
-  .route('/delete/:id')
-  .delete(deleteSingleSubCaregory);
+router.route("/delete/:id").delete(deleteSingleSubCaregory);
 
-
-router
-  .route('/category/:id')
-  .get(getSingleSubCaregory);
+router.route("/category/:id").get(getSingleSubCaregory);
 
 module.exports = router;
-
-

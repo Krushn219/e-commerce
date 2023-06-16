@@ -32,22 +32,69 @@ app.use(cookieParser());
 app.use(errorMiddleware);
 
 // route connection
-// app.use("/", require("./routes"));
-// app.use("/", (req, res) => {
-//   res.send("Api Running Successfully...");
-// });
-app.use("/category", require("./routes/Category"));
+
+app.use("/user", require("./routes/users"));
 app.use("/product", require("./routes/product"));
+
+// MainCategory
 app.use("/mainCategory", require("./routes/mainCategory"));
-app.use("/productfeature", require("./routes/ProductFeature"));
-app.use("/featurevalue", require("./routes/FeatureValue"));
+
+//category
+app.use("/category", require("./routes/Category"));
+
+//subCategory
+app.use("/admin/subcategory", require("./routes/SubCategory"));
+
+//Group
+app.use("/group", require("./routes/group"));
+
+// Testimonial
+app.use("/testimonial", require("./routes/Testimonial"));
+
+//Blogs
+app.use("/blogs", require("./routes/Blogs"));
+
+// Banner
+app.use("/banner", require("./routes/banner"));
+
+//Feature
 app.use("/feature", require("./routes/Feature"));
-// app.use("/product", require("./routes/product"));
-// app.use("/product", require("./routes/product"));
-// app.use("/product", require("./routes/product"));
-// app.use("/product", require("./routes/product"));
-// app.use("/product", require("./routes/product"));
-// app.use("/product", require("./routes/product"));
+
+//Feature Value
+app.use("/featurevalue", require("./routes/FeatureValue"));
+
+//Product Feature Value
+app.use("/productfeature", require("./routes/ProductFeature"));
+
+//Address
+app.use("/address", require("./routes/Address"));
+
+//coupon
+app.use("/coupon", require("./routes/Coupon"));
+
+//Enquiry
+app.use("/enquiry", require("./routes/Enquiry"));
+
+//attribute
+app.use("/attribute", require("./routes/Attribute"));
+
+//attribute Value
+app.use("/attributevalue", require("./routes/AttributeValue"));
+
+//Product Attribute Value
+app.use("/productattributes", require("./routes/ProductAttribute"));
+
+// Cart
+app.use("/cart", require("./routes/cart"));
+
+//order
+app.use("/order", require("./routes/Order"));
+
+//payment
+app.use("/payment", require("./routes/paymentRoute"));
+
+//wishlist
+app.use("/wishlist", require("./routes/wishlist"));
 
 // server connection
 app.listen(process.env.PORT, () => {

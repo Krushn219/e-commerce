@@ -1,93 +1,84 @@
-const express = require('express')
+const express = require("express");
 const router = express.Router();
 const {
-  filtersUserall, filtersUser, filtersUseryear, filtersUserweek, getadmindata, getUser
+  filtersUserall,
+  filtersUser,
+  filtersUseryear,
+  filtersUserweek,
+  getadmindata,
+  getUser,
 } = require("../controllers/userControllers");
-const userControllers = require('../controllers/userControllers')
-const { verifyToken, verifyTokenAndAdmin } = require('../jwt/jsonwebtoken')
-// const { upload } = require("../services/multer");
+const userControllers = require("../controllers/userControllers");
+const { verifyToken, verifyTokenAndAdmin } = require("../jwt/jsonwebtoken");
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
 
 const multer = require("multer");
-// const { route } = require('./product');
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads')
-  },
-  filename: function (req, file, cb) {
-    // const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-    cb(null, file.fieldname + '-' + Date.now() + ".jpg");
-  }
-})
+const cloudinary = require("cloudinary").v2;
 
-const upload = multer({ storage: storage }).single("image");
+//cloudinary configuration
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.CLOUD_API_KEY,
+  api_secret: process.env.CLOUD_API_SECRET,
+});
 
-router.get('/', userControllers.home)
+// Multer storage configuration
+const storage = multer.diskStorage({});
+
+// Multer upload instance
+const upload = multer({ storage });
+
+router.get("/", userControllers.home);
 
 // User register
-router.post('/register', userControllers.register)
+router.post("/register", userControllers.register);
 
 // User Verify
-router.post('/verifyOTP', userControllers.verifyotp)
+router.post("/verifyOTP", userControllers.verifyotp);
 
 // LOG In
-router.post('/login', userControllers.login)
+router.post("/login", userControllers.login);
 
-router.post('/add-address', userControllers.createUserAddress)
+router.post("/add-address", userControllers.createUserAddress);
 
 // User update
 router.put("/update", isAuthenticatedUser, userControllers.updateuser);
 
 // User LogOut
-router.get('/logout', isAuthenticatedUser, userControllers.logout);
+router.get("/logout", isAuthenticatedUser, userControllers.logout);
 
 // Get All Users
-router.get('/users', userControllers.getAllUsers);
+router.get("/users", userControllers.getAllUsers);
 
 // Get single user
-router.get('/singleUser', isAuthenticatedUser, userControllers.getSingleUser);
+router.get("/singleUser", isAuthenticatedUser, userControllers.getSingleUser);
 
 // Delete User
-router.delete('/:id', userControllers.deleteUser);
-
+router.delete("/:id", userControllers.deleteUser);
 
 //upload image
-router.post("/upload", upload, userControllers.image)
-// router.post("/uploads",upload("image",2),users_controllers.image)
+router.post("/upload", upload.single("image"), userControllers.image);
 
 //get all users -- filter
 router.get("/filterUsers", userControllers.getFilterUsers);
 
-//get selected Address 
+//get selected Address
 router.get("/select/:id", isAuthenticatedUser, userControllers.selectedAddress);
 
+router.route("/single/:id").get(getUser);
 
-router
-  .route("/single/:id")
-  .get(getUser);
-
-router
-  .route("/admin/role")
-  .get(getadmindata);
+router.route("/admin/role").get(getadmindata);
 
 // all User
-router
-  .route("/data/all")
-  .get(filtersUserall);
+router.route("/data/all").get(filtersUserall);
 
 //  User(month)
-router
-  .route("/data/month")
-  .get(filtersUser);
+router.route("/data/month").get(filtersUser);
 
 //  User (year)
-router
-  .route("/data/allyear")
-  .get(filtersUseryear);
+router.route("/data/allyear").get(filtersUseryear);
 
 // User(week)
-router
-  .route("/data/week")
-  .get(filtersUserweek)
+router.route("/data/week").get(filtersUserweek);
 
-module.exports = router
+module.exports = router;
