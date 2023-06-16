@@ -33,9 +33,9 @@ app.use(errorMiddleware);
 
 // route connection
 // app.use("/", require("./routes"));
-app.use("/", (req, res) => {
-  res.send("Api Running Successfully...");
-});
+// app.use("/", (req, res) => {
+//   res.send("Api Running Successfully...");
+// });
 app.use("/category", require("./routes/Category"));
 
 // server connection
