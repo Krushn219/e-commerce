@@ -1,4 +1,5 @@
 const express = require("express");
+const router = express.Router();
 
 const {
   createSubCaregory,
@@ -9,8 +10,6 @@ const {
   updateSubCaregory,
 } = require("../controllers/subCategory");
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
-
-const router = express();
 
 const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
