@@ -49,7 +49,7 @@ app.use("/category", require("./routes/Category"));
 app.use("/group", require("./routes/group"));
 
 // // Testimonial
-// app.use("/testimonial", require("./routes/Testimonial"));
+app.use("/testimonial", require("./routes/Testimonial"));
 
 // //Blogs
 // app.use("/blogs", require("./routes/Blogs"));
