@@ -79,13 +79,13 @@ app.use("/enquiry", require("./routes/Enquiry"));
 app.use("/attribute", require("./routes/Attribute"));
 
 // //attribute Value
-// app.use("/attributevalue", require("./routes/AttributeValue"));
+app.use("/attributevalue", require("./routes/AttributeValue"));
 
 // //Product Attribute Value
-// app.use("/productattributes", require("./routes/ProductAttribute"));
+app.use("/productattributes", require("./routes/ProductAttribute"));
 
 // // Cart
-// app.use("/cart", require("./routes/cart"));
+app.use("/cart", require("./routes/cart"));
 
 // //order
 // app.use("/order", require("./routes/Order"));
