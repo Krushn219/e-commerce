@@ -38,6 +38,16 @@ app.use(errorMiddleware);
 // });
 app.use("/category", require("./routes/Category"));
 app.use("/product", require("./routes/product"));
+app.use("/mainCategory", require("./routes/mainCategory"));
+app.use("/productfeature", require("./routes/ProductFeature"));
+app.use("/featurevalue", require("./routes/FeatureValue"));
+app.use("/feature", require("./routes/Feature"));
+// app.use("/product", require("./routes/product"));
+// app.use("/product", require("./routes/product"));
+// app.use("/product", require("./routes/product"));
+// app.use("/product", require("./routes/product"));
+// app.use("/product", require("./routes/product"));
+// app.use("/product", require("./routes/product"));
 
 // server connection
 app.listen(process.env.PORT, () => {
