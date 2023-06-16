@@ -42,11 +42,11 @@ app.use("/mainCategory", require("./routes/mainCategory"));
 //category
 app.use("/category", require("./routes/Category"));
 
-// //subCategory
-// app.use("/admin/subcategory", require("./routes/SubCategory"));
+//subCategory
+app.use("/admin/subcategory", require("./routes/SubCategory"));
 
-// //Group
-// app.use("/group", require("./routes/group"));
+//Group
+app.use("/group", require("./routes/group"));
 
 // // Testimonial
 // app.use("/testimonial", require("./routes/Testimonial"));
