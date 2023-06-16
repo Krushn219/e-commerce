@@ -29,11 +29,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(errorMiddleware);
 
 // route connection
-app.use("/", require("./routes"));
-
-app.use(errorMiddleware);
+// app.use("/", require("./routes"));
+app.use("/", (req, res) => {
+  res.send("Api Running Successfully...");
+});
 
 // server connection
 app.listen(process.env.PORT, () => {
