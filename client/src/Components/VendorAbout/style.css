@@ -1,0 +1,44 @@
+.vendor-about-content{
+  padding: 0 30px;
+}
+.vendor-about-content h4, .productselling-content h4, .vendor-fees-wrapper h4{
+  font-size: 20px;
+  letter-spacing: -0.45px;
+  margin: 0px 0px 16px 1px;
+  color: var(--theme-color);
+}
+.vender-about {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.vendor-about-content h2, .productselling-content h2, .vendor-fees-wrapper h2{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0px 0px 13px 0px;
+}
+.vendor-about-content p, .productselling-content p, .vendor-fees-wrapper p{
+  color: #777;
+  padding: 0 0 20px;
+}
+.vendor-about-content button{
+  border: 2px solid #333 !important;
+  padding: 7px 15px;
+  background: #fff !important;
+  color: #333 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s linear;
+}
+.vendor-about-content button:hover{
+  background-color: #333 !important;
+  color: #fff !important;
+  font-weight: 500;
+}
+.vendor-about-img{
+  padding-left: 30px;
+}
+.vendor-about-img img{
+  border-radius: 20px;
+}

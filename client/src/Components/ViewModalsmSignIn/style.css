@@ -1,0 +1,12 @@
+.modal-login-sm{
+  display: none;
+}
+@media (max-width: 767px){
+  .modal-login-sm{
+    display: block;
+  }
+  .login-modal-body{
+    background-color: #fff !important;
+    z-index: 99999;
+  }
+}

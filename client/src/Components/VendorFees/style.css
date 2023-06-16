@@ -1,0 +1,16 @@
+.vendor-fees-wrapper h3{
+  font-size: 40px;
+  color: #999;
+}
+.vendor-fees-wrapper h5{
+  color: #333;
+  font-weight: 700;
+}
+.vendor-fees-info{
+  padding-top: 30px;
+}
+.vendor-fees-wrapper {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+}

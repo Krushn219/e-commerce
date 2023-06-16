@@ -1,0 +1,116 @@
+/* store */
+.vendore-store-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.vendore-store-header h2{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.vendore-store-header span{
+  font-size: 15px;
+  font-weight: 700;
+}
+.button-area{
+  border: 1px dashed #e5e5e5;
+  padding: 30px;
+  text-align: center;
+  margin: 30px 0;
+}
+.button-area svg{
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: #8080809e;
+  font-size: 65px;
+}
+.button-area button{
+  border: 2px solid var(--theme-color) !important;
+  color: #fff !important;
+  background-color: var(--theme-color) !important;
+  transition: all 0.3s ease;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.button-area button:hover{
+  border: 2px solid var(--theme-color) !important;
+  color: var(--theme-color) !important;
+  background-color: #fff !important;
+}
+.button-area p{
+  color: #777;
+  font-size: 15px;
+}
+.export-btn2{
+  margin-left: 0;
+}
+.vendore-store-info {
+  padding: 0 15px;
+}
+.vendore-store-info input, .vendore-store-info select{
+  width: 100%;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 7px 15px;
+  font-size: 15px;
+  border-radius: var(--border-radius);
+}
+.vendore-store-info label{
+  padding-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+}
+.vendor-payment-info{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.vendor-payment-info input{
+  box-shadow: none !important;
+}
+.file-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.address-complement{
+  border: 1px solid #ddd;
+  padding: 7px 15px;
+  border-radius: var(--border-radius);
+}
+.order-history-para .wishlist-table {
+  width: 954px;
+}
+@media (max-width: 991px){
+  .button-area {
+    margin-top: 0;
+  }
+  .vendore-store-header{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px){
+  .address-city{
+    margin-right: 0 !important;
+  }
+  .add-state{
+    margin-top: 15px;
+  }
+  .order-history-wrapper2{
+    padding: 0;
+  }
+  .order-history-main-wrapper{
+    padding: 15px;
+  }
+}

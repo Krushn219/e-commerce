@@ -1,0 +1,44 @@
+.mainsidebar-category-wrapper .bestseller{
+  margin-top: 30px;
+}
+.mainsidebar-category-wrapper .shipping-wrapper{
+  display: none;
+}
+.mainsidebar-category-wrapper .view-product{
+  display: none;
+}
+.sidebar-brand h4, .sidebar-suppliers h4{
+  background: #fff !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #ddd;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 2px;
+  padding: 15px;
+  background: #f5f5f5;
+  text-transform: uppercase;
+}
+.sidebar-brand, .sidebar-suppliers{
+  margin-bottom: 30px;
+  border: 1px solid #dddddd;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.sidebar-brands-title p, .sidebar-suppliers-title p{
+  color: #232323;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.sidebar-brands-title p:hover, .sidebar-suppliers-title p:hover{
+  color: var(--theme-color);
+}
+.sidebar-brands-title, .sidebar-suppliers-title{
+  padding: 15px;
+  background-color: #fff;
+}
+.filter-brandm{
+  text-transform: capitalize;
+}

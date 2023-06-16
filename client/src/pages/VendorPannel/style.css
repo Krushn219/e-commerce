@@ -1,0 +1,329 @@
+.dashboard-menu{
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 15px;
+  overflow: hidden;
+}
+.dashboard-menu li{
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.db-link.active{
+  background-color: var(--theme-color);
+  color: #fff;
+}
+.dashboard-menu li:hover{
+  background-color: var(--theme-color);
+  color: #fff;
+}
+.dashboard-pages{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 15px;
+  border: 1px solid #ddd;
+}
+.vendor-icons svg{
+  width: 33.10%;
+  color: #fff;
+  background-color: #333;
+  padding: 15px 0;
+}
+.vendor-icons svg:hover{
+  background-color: var(--theme-color);
+  color: #fff;
+}
+.db-link svg{
+  padding-right: 15px;
+}
+.vendor-user-icon{
+  position: relative;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.vendor-user-icon::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #ddd;
+}
+
+/* Dashboard */
+.db-sale-title{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 0 15px 30px;
+}
+.db-sale-title li{
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+.db-sale-title p{
+  font-weight: 700;
+  color: #333;
+  padding-top: 5px;
+}
+.db-sale-orders {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 0 15px 30px;
+}
+.db-sale-orders-header{
+  padding: 15px;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+}
+.db-sale-orders-header svg{
+  padding-right: 15px;
+}
+.db-sale-orders table tr td{
+  padding: 7px 15px;
+}
+.db-sale-products{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.canvas-graph {
+  padding: 15px;
+}
+
+/* Dashboard Product */
+.dbproduct-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.dbproduct-header div{
+  color: #999;
+  font-size: 15px;
+}
+.addnew-pro-btn svg{
+  padding-right: 7px;
+}
+.addnew-pro-btn, .filter-product-btn{
+  background: #333 !important;
+  color: #fff !important;
+  border: 2px solid #333 !important;
+  padding: 7px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  align-items: center;
+}
+.addnew-pro-btn:hover, .filter-product-btn:hover{
+  background: #fff !important;
+  color: #333 !important;
+  border: 2px solid #333 !important;
+}
+.dbproduct-category{
+  display: flex;
+  align-items: center;
+}
+.dbpro-search-cat form{
+  position: relative;
+}
+.dbpro-search-cat form svg{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dbpro-search-cat{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dbproduct-category select, .dbpro-search-cat input, .vendor-order-date input{
+  padding: 7px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+}
+.dbproduct-category select{
+  margin-right: 10px;
+}
+.dbpro-search-cat{
+  padding: 20px 0;
+}
+.dbpro-img img{
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ddd;
+}
+.dbproduct-table{
+  margin-top: 30px;
+}
+.dbproduct-table tr{
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+.dbproduct-table tr th, .dbproduct-table tr td{
+  padding: 15px;
+}
+.instock{
+  background-color: #55cadf38;
+  color: var(--theme-color);
+  font-size: 14px;
+  padding: 2px 5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+}
+.add-new-pro-main{
+  cursor: pointer;
+}
+.vendor-order-date span{
+  border: 1px solid #ddd;
+  padding: 7px 15px;
+  border-radius: 4px;
+}
+.vendorpro-delete svg{
+  color: var(--theme-color);
+  font-size: 14px;
+}
+
+/* Vendor Order */
+.export-btn{
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 2px solid #333 !important;
+  padding: 7px 15px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.export-btn:hover{
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 2px solid #333 !important;
+}
+.vendor-order-date{
+  align-items: center;
+}
+.vendor-order-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.dborder-img img{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+}
+
+/* vendor withdraw */
+.vendor-withdraw-title h2{
+  font-size: 18px;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+}
+.withdraw-balance{
+  color: var(--theme-color);
+  border: 1px solid var(--theme-color);
+  margin: 30px 0;
+  border-radius: 4px;
+  padding: 15px;
+}
+.withdraw-balance p{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.withdraw-balance span{
+  color: darkgreen;
+}
+.dashboard-menu a{
+  color: #333;
+}
+.dashboard-menu li:hover a{
+  color: #fff;
+}
+.db-setting svg{
+  padding-right: 15px;
+}
+
+/* Withdraw */
+.vendor-withdraw-wrapper label{
+  font-size: 15px;
+  color: #777;
+  text-transform: capitalize;
+}
+.vendor-withdraw-wrapper button{
+  background-color: var(--theme-color);
+  color: #fff;
+  padding: 7px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+}
+.vendor-withdraw-wrapper input{
+  border: 1px solid #ddd;
+  padding: 7px 15px;
+  margin-left: 15px;
+  font-size: 13px;
+}
+.withdraw-payment div{
+  margin: 20px 0;
+}
+.withdraw-payment h3{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 0 0;
+}
+
+@media (max-width: 1399px){
+  .dbpromain-table table{
+    width: 1019px;
+  }
+}
+
+@media (max-width: 767px){
+  .dbproduct-table table {
+    width: 737px;
+  }
+}
+
+@media (max-width: 575px){
+  .dbpro-search-cat, .vendor-order-info{
+    display: block;
+  }
+  .dbproduct-category select, .dbpro-search-cat input{
+    width: 100%;
+  }
+  .export-btn1{
+    margin-left: 0;
+  }
+  .main-export-btns{
+    padding-top: 20px;
+  }
+  .dbproduct-category{
+    padding-bottom: 20px;
+  }
+}

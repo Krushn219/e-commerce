@@ -1,0 +1,22 @@
+.follow-order-staps h4{
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #232323;
+  margin-bottom: 1rem;
+  line-height: 26px;
+}
+.orderhistory-reference thead{
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #777;
+}
+.orderhistory-reference table tbody td{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 575px){
+  .orderhistory-reference table{
+    width: 425px;
+  }
+}

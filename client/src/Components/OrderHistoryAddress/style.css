@@ -1,0 +1,11 @@
+.orderhistory-address-wrapper .orderhistory-reference{
+  margin: 0 15px 15px;
+}
+.orderhistory-address-title h4{
+  font-size: 18px;
+  font-weight: 700;
+}
+.orderhistory-address-info p{
+  font-size: 16px;
+  color: #777;
+}

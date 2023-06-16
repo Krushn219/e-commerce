@@ -1,0 +1,17 @@
+.product-order-title{
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.product-order-title:hover{
+  color: #17aec7;
+}
+@media (max-width: 991px){
+  .orderhistory-price-wrapper table{
+    width: 897px;
+  }
+}
+@media (max-width: 767px){
+  .orderhistory-price-wrapper table {
+    width: 700px;
+  }
+}

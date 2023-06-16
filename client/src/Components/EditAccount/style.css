@@ -1,0 +1,45 @@
+.edit-account-info input {
+  border: 1px solid #ddd;
+}
+
+.edit-account-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.edit-account-wrapper h3 {
+  color: #666;
+  font-size: 17px;
+  padding-top: 30px;
+}
+
+.edit-account-title h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.edit-account-info label, .social-title label {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: #000;
+}
+
+.change-password {
+  font-size: 18px;
+  color: #666;
+  padding-top: 30px;
+}
+
+.profile-img{
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+@media (max-width: 575px){
+  .edit-accout-wrapper, .vendor-store-wrapper{
+    padding: 15px;
+  }
+}

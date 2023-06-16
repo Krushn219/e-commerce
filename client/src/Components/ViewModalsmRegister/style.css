@@ -1,0 +1,9 @@
+.modal-register-sm{
+  display: none;
+}
+
+@media (max-width: 767px){
+  .modal-register-sm{
+    display: block;
+  }
+}

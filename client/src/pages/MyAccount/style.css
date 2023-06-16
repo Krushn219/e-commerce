@@ -1,0 +1,74 @@
+.myaccount-wrapper{
+    background-color: #e5e5e536;
+}
+.my-account-main-wrapper{
+    padding-bottom: 100px;
+}
+.user-informationmain svg{
+    background-color: var(--theme-color);
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 21px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.myaccount-item{
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin: 100px 0 0;
+    margin: 0 15px;
+}
+.user-information, .user-informationmain{
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.user-information svg{
+    font-size: 35px;
+    color: var(--theme-color);
+    margin-bottom: 20px;
+}
+.user-information h4,.user-informationmain h4{
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #000;
+}
+.postal-code input{
+    padding: 5px;
+}
+.my-account-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.vendor-pannel-sidebar .back-account:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #000 !important;
+}
+@media (max-width: 1199px){
+    .user-information h4, .user-informationmain h4 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+@media (max-width: 991px){
+    .mt-main3{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767px){
+    .user-information{
+        margin-top: 30px;
+    }
+    .myaccount-item{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .user-information h4, .user-informationmain h4 {
+        font-size: 16px;
+    }
+}

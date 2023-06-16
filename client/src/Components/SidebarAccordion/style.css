@@ -1,0 +1,26 @@
+.sidebar-accordion-wrapper .seller-box-wrapper .seller-box h4 {
+  display: none;
+}
+.sidebar-accordion-wrapper .seller-box{
+  margin: 5px 0;
+}
+.seller-box h4{
+  background: #fff !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #ddd;
+}
+.seller-box-wrapper{
+  background-color: #fff;
+}
+.shop-sidebar-wrapper .category-main-div, .compare-wrapper .category-main-div, .compare-wrapper .free-shipping-accordion{
+  display: none;
+}
+.category-main-wrapper .free-shipping-accordion{
+  display: none;
+}
+
+@media (max-width: 991px){
+  .categories-main-title-visible{
+    display: none;
+  }
+}

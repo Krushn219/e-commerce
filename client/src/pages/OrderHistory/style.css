@@ -1,0 +1,21 @@
+.order-history-wrapper2{
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    padding: 15px;
+}
+.order-history-main-wrapper{
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.order-history-para p{
+    padding: 6px 15px 15px;
+    color: #777;
+    font-weight: 600;
+}
+.reorder {
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.reorder:hover{
+    color: var(--theme-color);
+}

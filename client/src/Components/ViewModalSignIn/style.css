@@ -1,0 +1,25 @@
+.already-account{
+  display: none !important;
+}
+@media (max-width: 767px){
+  .already-account{
+    display: block !important;
+  }
+}
+
+.inputStyle input {
+  width: 2rem !important;
+  height: 2rem;
+  margin: 20px 5px 0;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inputStyle input:focus-visible {
+  outline-color: var(--color-secondary);
+}
+.login-main-wrapper .cancel-btn:hover{
+  background-color: #fff !important;
+  color: #008000 !important;
+}

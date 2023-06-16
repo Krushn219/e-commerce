@@ -1,0 +1,120 @@
+.wishlist-reffered-wrapper{
+  background-color: #e5e5e536;
+  padding: 0 15px;
+}
+.wishlistreffered-home{
+  color: var(--theme-color) !important;
+}
+.wishlist-reffered-wrapper .wishlist-pro-item{
+  border: none;
+  padding: 0;
+}
+.wishlist-reffered-wrapper .mainsidebar-category-wrapper .bestseller {
+  margin-top: 0;
+}
+.wishlist-reffered-info{
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+.wishlist-pro-img img{
+  height: 320px;
+  width: 100%;
+}
+.wishlist-pro-img{
+  height: 335px;
+}
+.quantity-wishlist-reffered span{
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  line-height: 24px;
+  padding-left: 7px;
+}
+.other-wishlist{
+  font-size: 15px;
+  font-weight: 500;
+  color: #666;
+}
+.other-wishlist span{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 5px;
+  color: #333;
+  transition: all 0.5s ease;
+}
+.other-wishlist span:hover{
+  color: var(--theme-color);
+  cursor: pointer;
+}
+
+/* pagination */
+.pagination{
+  color: var(--theme-color) !important;
+  margin-top: 15px !important;
+}
+.pagination .page-link{
+  color: var(--theme-color) !important;
+}
+.pagination .page-item.active .page-link{
+  background-color: var(--theme-color) !important;
+  border: 1px solid var(--theme-color) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+.page-link:focus{
+  box-shadow: none !important;
+}
+
+@media (max-width: 1113px){
+  .wishlist-reffered-wrapper .wishlist-view-main{
+    margin-left: 2px;
+  }
+}
+@media (max-width: 1069px){
+  .wishlist-reffered-wrapper .wishlist-view-main{
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 991px){
+  .wishlist-reffered-wrapper .shop-accordion {
+    padding: 0;
+    margin-top: 30px !important;
+  }
+  .wishlist-reffered-wrapper .free-shipping-accordion{
+    display: none;
+  }
+  .wishlist-reffered-wrapper .shop-accordion .view-product{
+    display: none;
+  }
+  .wishlist-reffered-wrapper .wishlist-view-main{
+    margin-left: 10px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px){
+  .other-wishlist span {
+    font-size: 15px;
+  }
+  .wishlist-pro-img img {
+    height: 215px;
+  }
+  .wishlist-pro-img{
+    height: 230px;
+  }
+}
+@media (max-width: 323px){
+  .wishlist-reffered-wrapper .wishlist-view-main{
+    margin-left: 2px;
+  } 
+}
+@media (max-width: 320px){
+  .other-wishlist {
+    font-size: 14px;
+  }
+  .other-wishlist span {
+    font-size: 14px;
+    padding: 0;
+  }
+}

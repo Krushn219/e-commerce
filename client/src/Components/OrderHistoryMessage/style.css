@@ -1,0 +1,52 @@
+.message-input select {
+  height: 2.625rem;
+  width: 40%;
+  background: #f1f1f1;
+  padding: 0 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none !important;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.message-textarea textarea{
+  height: 2.625rem;
+  width: 100%;
+  background: #f1f1f1;
+  padding: 0 0.5rem;
+  padding-top: 5PX;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+.orderhistory-reference thead th{
+  font-weight: 500;
+}
+.orderhistory-mess-info{
+  font-size: 15px;
+  font-weight: 500;
+}
+.product-orderhistory-main{
+  padding: 15px 15px 0;
+}
+.pro-mess-label{
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+@media (max-width: 767px){
+  .message-input select {
+    width: 100%;
+  }
+}
+@media (max-width: 499px){
+  .order-mess-main{
+    width: 100% !important;
+  }
+  .pro-mess-label{
+    padding-bottom: 10px;
+  }
+}

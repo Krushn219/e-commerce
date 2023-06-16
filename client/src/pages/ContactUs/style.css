@@ -1,0 +1,78 @@
+.contact-us-wrapper{
+    background-color: #e5e5e536;
+}
+.contact-us-wrapper2{
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+.main-svg-contact-location svg{
+    font-size: 31px;
+    color: #777;
+    margin-bottom: 15px;
+}
+.store-info-title h4{
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;  
+}
+.contact-location p{
+    font-size: 15px;
+    line-height: 27px;
+}
+.contact-main-title label{
+    font-weight: 500;
+}
+.location{
+    text-align: center;
+    padding: 30px 0;
+    border-right: 1px solid #dddddd;
+}
+.contact-email-subscription{
+    border-right: none;
+}
+.contact-us-main-wrapper{
+    padding-bottom: 50px;
+}
+.contact-mail:hover{
+    color: var(--theme-color);
+    cursor: pointer;
+}
+.contact-call-info p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-file-input input{
+    padding: 3px;
+    cursor: pointer;
+}
+.contact-message textarea{
+    background: #fff;
+    color: #7a7a7a;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    height: 35px;
+}
+.contact-main-title{
+    padding: 0 15px;
+}
+@media (max-width: 991px){
+    .location-phone{
+        border-right: none;
+    }
+}
+@media (max-width: 767px){
+    .location-border{
+        border-right: none;
+    }
+}
+@media (max-width: 575px){
+    .store-info-title h4 {
+        font-size: 19px;
+    }
+}

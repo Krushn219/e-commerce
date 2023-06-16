@@ -1,0 +1,23 @@
+.productselling-img img{
+  border-radius: 20px;
+}
+.productselling-img {
+  padding-right: 30px;
+}
+.productselling {
+  background-color: #fff;
+  border-radius: 20px;
+}
+.productselling-content{
+  padding: 0 30px;
+}
+.product-selling-list li{
+  list-style-type: disc;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  line-height: 30px;
+}
+.product-selling-list{
+  padding-left: 18px;
+}

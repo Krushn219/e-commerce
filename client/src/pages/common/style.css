@@ -1,0 +1,37 @@
+.projectImg {
+    z-index: 9999;
+}
+
+.projectImg .thumbImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.projectImg .thumbImg .img_wrap {
+    margin: 0 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.projectImg .thumbImg .img_wrap img {
+    width: 64px;
+    height: 64px;
+}
+
+.projectImg .thumbImg .img_wrap.active {
+    border: 2px solid rgb(13, 202, 240) !important;
+}
+
+.projectImg .mainImg {
+    height: 295px;
+}
+.js-image-zoom__zoomed-image{
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.projectImg .mainImg .mainImage,
+.projectImg .mainImg .mainImage>img {
+    width: 295px !important;
+    margin: auto;
+}

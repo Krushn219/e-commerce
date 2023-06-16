@@ -1,0 +1,131 @@
+.Information-wrapper{
+    background-color: #e5e5e536;
+}
+.Information-item .checkout-info3{
+    padding: 0;
+}
+.Information-item{
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin: 0 15px 30px;
+}
+.back-account{
+    border: none;
+    background-color: #000 !important;
+    color: #fff;
+    border: 1px solid #000 !important;
+    padding: 4px 20px;
+    margin: 0 -0 30px 13px;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+.back-account:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+.back-account span{
+    color: #fff !important;
+}
+.back-account:hover span{
+    color: #000 !important;
+}
+.address-not-available{
+    border: 1px solid #dddddd;
+    padding: 6px 15px;
+    border-color: #08b9b9ed;
+    border-radius: 0;
+    background-color: #08b9b947;
+    font-size: 14px;
+    font-weight: 500;
+}
+.saveaddress-wrapper{
+    background-color: #e5e5e536;
+}
+.success-address{
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 0;
+}
+.saveaddress-wrapper2{
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+.saveaddress-main-wrapper{
+    padding-bottom: 50px;
+}
+.address-list{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    padding: 20px 15px;
+    width: 50%;
+}
+.address-list h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #555;
+}
+.update-btn{
+    border: none;
+    background: var(--theme-color) !important;
+    color: #fff;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+.delete-btn{
+    border: none;
+    background: #c82333 !important;
+    color: #fff;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+.update-btns{
+    margin-top: 15px;
+}
+.form-inputmain{
+    margin: 15px 0;
+}
+@media (max-width: 1299px){
+    .delete-btn{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 991px){
+    .address-list {
+        width: 50%;
+    }
+    .delete-btn{
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px){
+    .address-list {
+        width: 100%;
+    }
+}
+@media (max-width: 575px){
+    .user-name label, .user-name1 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .user-name p {
+        font-weight: 600;
+        font-size: 13px;
+    }
+}
+@media (max-width: 499px){
+    .address-list {
+        width: 100%;
+    }   
+}
+@media (max-width: 380px){
+    .update-btn, .delete-btn{
+        padding: 5px 15px;
+    }
+}

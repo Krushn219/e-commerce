@@ -1,0 +1,8 @@
+.login-sm-modal-body{
+  display: none !important;
+}
+@media (max-width: 767px){
+  .login-sm-modal-body{
+    display: block !important;
+  }
+}

@@ -1,0 +1,28 @@
+.brand-img img {
+  margin: 0 auto;
+  width: auto;
+  padding: 0 10px;
+}
+.brand-logomain{
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .07);
+  margin: 0 10px;
+}
+.brand-img{
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+.brand-img .slick-arrow{
+  display: block !important;
+}
+.brand-img .slick-next {
+  right: -11px;
+  background: #fff !important;
+  border-radius: 50%;
+}
+.brand-img .slick-prev {
+  left: -11px;
+  background: #fff !important;
+  border-radius: 50%;
+}

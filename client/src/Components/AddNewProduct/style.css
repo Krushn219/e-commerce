@@ -1,0 +1,82 @@
+.new-productlist{
+  padding: 0 15px;
+}
+
+.new-productlist .edit-pro-input input, .edit-pro-input textarea, .edit-pro-info select{
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0.0625rem solid #ced4da;
+  appearance: none;
+  border-radius: 0.125rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background 0.15s ease-in-out;
+  outline: none;
+  box-shadow: none;
+  text-transform: capitalize;
+}
+
+.pro-main-category select, .pro-main-category input {
+  appearance: none;
+  background-color: #fff;
+  border-color: #e2e8f0;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-size: 1.5em 1.5em;
+  outline: none;
+  width: 100%;
+  box-shadow: none !important;
+  border: 1px solid #ddd !important;
+}
+.pro-main-category select{
+  background: rgba(221, 221, 221, 0.603);
+}
+.pro-main-category select:focus, .pro-main-category input:focus{
+  border: 1px solid #ddd !important;
+}
+
+.new-productlist select {
+  background-image: none !important;
+}
+.edit-pro-list, .main-product-info{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+.edit-pro-input label{
+  padding: 20px 0 5px;
+}
+.new-productlist label{
+  font-size: 15px;
+  font-weight: 500;
+}
+.desc-title h4, .edit-pro-info h4{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.add-new-pro{
+  background: #333 !important;
+  border: 2px solid #333 !important;
+  color: #fff !important;
+  padding: 7px 15px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+.add-new-pro:hover{
+  background-color: #fff !important;
+  border: 2px solid #333 !important;
+  color: #333 !important;
+}
