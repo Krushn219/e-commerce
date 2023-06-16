@@ -36,7 +36,7 @@ app.use(errorMiddleware);
 app.use("/", (req, res) => {
   res.send("Api Running Successfully...");
 });
-// app.use("/v1/admin/api", require("./routes/product"));
+app.use("/category", require("./routes/Category"));
 
 // server connection
 app.listen(process.env.PORT, () => {
