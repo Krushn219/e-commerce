@@ -52,10 +52,10 @@ app.use("/group", require("./routes/group"));
 app.use("/testimonial", require("./routes/Testimonial"));
 
 // //Blogs
-// app.use("/blogs", require("./routes/Blogs"));
+app.use("/blogs", require("./routes/Blogs"));
 
 // // Banner
-// app.use("/banner", require("./routes/banner"));
+app.use("/banner", require("./routes/banner"));
 
 // //Feature
 app.use("/feature", require("./routes/Feature"));
