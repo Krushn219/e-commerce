@@ -43,7 +43,7 @@ app.use("/mainCategory", require("./routes/mainCategory"));
 app.use("/category", require("./routes/Category"));
 
 //subCategory
-app.use("/admin/subcategory", require("./routes/SubCategory"));
+// app.use("/admin/subcategory", require("./routes/SubCategory"));
 
 //Group
 // app.use("/group", require("./routes/group"));
