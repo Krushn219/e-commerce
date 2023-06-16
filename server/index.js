@@ -67,16 +67,16 @@ app.use("/featurevalue", require("./routes/FeatureValue"));
 app.use("/productfeature", require("./routes/ProductFeature"));
 
 // //Address
-// app.use("/address", require("./routes/Address"));
+app.use("/address", require("./routes/Address"));
 
 // //coupon
-// app.use("/coupon", require("./routes/Coupon"));
+app.use("/coupon", require("./routes/Coupon"));
 
 // //Enquiry
-// app.use("/enquiry", require("./routes/Enquiry"));
+app.use("/enquiry", require("./routes/Enquiry"));
 
 // //attribute
-// app.use("/attribute", require("./routes/Attribute"));
+app.use("/attribute", require("./routes/Attribute"));
 
 // //attribute Value
 // app.use("/attributevalue", require("./routes/AttributeValue"));
