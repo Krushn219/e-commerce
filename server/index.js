@@ -34,7 +34,7 @@ app.use(errorMiddleware);
 // route connection
 
 app.use("/user", require("./routes/users"));
-app.use("/product", require("./routes/product"));
+app.use("/products", require("./routes/product"));
 
 // MainCategory
 app.use("/mainCategory", require("./routes/mainCategory"));
