@@ -88,13 +88,13 @@ app.use("/productattributes", require("./routes/ProductAttribute"));
 app.use("/cart", require("./routes/cart"));
 
 // //order
-// app.use("/order", require("./routes/Order"));
+app.use("/order", require("./routes/Order"));
 
 // //payment
-// app.use("/payment", require("./routes/paymentRoute"));
+app.use("/payment", require("./routes/paymentRoute"));
 
 // //wishlist
-// app.use("/wishlist", require("./routes/wishlist"));
+app.use("/wishlist", require("./routes/wishlist"));
 
 // server connection
 app.listen(process.env.PORT, () => {
