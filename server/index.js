@@ -37,6 +37,7 @@ app.use(errorMiddleware);
 //   res.send("Api Running Successfully...");
 // });
 app.use("/category", require("./routes/Category"));
+app.use("/product", require("./routes/product"));
 
 // server connection
 app.listen(process.env.PORT, () => {
