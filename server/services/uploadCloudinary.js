@@ -1,10 +1,4 @@
-const fs = require('fs');
-const path = require('path');
 const cloudinary = require("cloudinary").v2;
-
-if (!fs.existsSync("./uploads")) {
-  fs.mkdirSync("./uploads");
-}
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
@@ -12,32 +6,22 @@ cloudinary.config({
   api_secret: process.env.CLOUD_API_Secret,
 });
 
-
-const uploadToCloudinary =  async (locaFilePath)=> {
+const uploadToCloudinary = async (localFilePath) => {
   var mainFolderName = "main";
-  var filePathOnCloudinary =
-    mainFolderName + "/" + locaFilePath;
+  var filePathOnCloudinary = mainFolderName + "/" + localFilePath;
 
   return cloudinary.uploader
-    .upload(locaFilePath, { public_id: filePathOnCloudinary })
+    .upload(localFilePath, { public_id: filePathOnCloudinary })
     .then((result) => {
-
-      // Remove file from local uploads folder
-
-      fs.unlinkSync(locaFilePath);
-
       return {
         message: "Success",
         url: result.url,
-        result
+        result,
       };
     })
     .catch((error) => {
-
-      // Remove file from local uploads folder
-      // fs.unlinkSync(locaFilePath);
-      return { message: "Fail" , error};
+      return { message: "Fail", error };
     });
-}
+};
 
 module.exports = uploadToCloudinary;
