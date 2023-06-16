@@ -42,59 +42,59 @@ app.use("/mainCategory", require("./routes/mainCategory"));
 //category
 app.use("/category", require("./routes/Category"));
 
-//subCategory
-app.use("/admin/subcategory", require("./routes/SubCategory"));
+// //subCategory
+// app.use("/admin/subcategory", require("./routes/SubCategory"));
 
-//Group
-app.use("/group", require("./routes/group"));
+// //Group
+// app.use("/group", require("./routes/group"));
 
-// Testimonial
-app.use("/testimonial", require("./routes/Testimonial"));
+// // Testimonial
+// app.use("/testimonial", require("./routes/Testimonial"));
 
-//Blogs
-app.use("/blogs", require("./routes/Blogs"));
+// //Blogs
+// app.use("/blogs", require("./routes/Blogs"));
 
-// Banner
-app.use("/banner", require("./routes/banner"));
+// // Banner
+// app.use("/banner", require("./routes/banner"));
 
-//Feature
-app.use("/feature", require("./routes/Feature"));
+// //Feature
+// app.use("/feature", require("./routes/Feature"));
 
-//Feature Value
-app.use("/featurevalue", require("./routes/FeatureValue"));
+// //Feature Value
+// app.use("/featurevalue", require("./routes/FeatureValue"));
 
-//Product Feature Value
-app.use("/productfeature", require("./routes/ProductFeature"));
+// //Product Feature Value
+// app.use("/productfeature", require("./routes/ProductFeature"));
 
-//Address
-app.use("/address", require("./routes/Address"));
+// //Address
+// app.use("/address", require("./routes/Address"));
 
-//coupon
-app.use("/coupon", require("./routes/Coupon"));
+// //coupon
+// app.use("/coupon", require("./routes/Coupon"));
 
-//Enquiry
-app.use("/enquiry", require("./routes/Enquiry"));
+// //Enquiry
+// app.use("/enquiry", require("./routes/Enquiry"));
 
-//attribute
-app.use("/attribute", require("./routes/Attribute"));
+// //attribute
+// app.use("/attribute", require("./routes/Attribute"));
 
-//attribute Value
-app.use("/attributevalue", require("./routes/AttributeValue"));
+// //attribute Value
+// app.use("/attributevalue", require("./routes/AttributeValue"));
 
-//Product Attribute Value
-app.use("/productattributes", require("./routes/ProductAttribute"));
+// //Product Attribute Value
+// app.use("/productattributes", require("./routes/ProductAttribute"));
 
-// Cart
-app.use("/cart", require("./routes/cart"));
+// // Cart
+// app.use("/cart", require("./routes/cart"));
 
-//order
-app.use("/order", require("./routes/Order"));
+// //order
+// app.use("/order", require("./routes/Order"));
 
-//payment
-app.use("/payment", require("./routes/paymentRoute"));
+// //payment
+// app.use("/payment", require("./routes/paymentRoute"));
 
-//wishlist
-app.use("/wishlist", require("./routes/wishlist"));
+// //wishlist
+// app.use("/wishlist", require("./routes/wishlist"));
 
 // server connection
 app.listen(process.env.PORT, () => {
