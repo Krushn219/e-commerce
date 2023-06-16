@@ -46,7 +46,7 @@ app.use("/category", require("./routes/Category"));
 // app.use("/admin/subcategory", require("./routes/SubCategory"));
 
 //Group
-// app.use("/group", require("./routes/group"));
+app.use("/group", require("./routes/group"));
 
 // // Testimonial
 // app.use("/testimonial", require("./routes/Testimonial"));
