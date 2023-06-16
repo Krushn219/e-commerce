@@ -58,13 +58,13 @@ app.use("/category", require("./routes/Category"));
 // app.use("/banner", require("./routes/banner"));
 
 // //Feature
-// app.use("/feature", require("./routes/Feature"));
+app.use("/feature", require("./routes/Feature"));
 
 // //Feature Value
-// app.use("/featurevalue", require("./routes/FeatureValue"));
+app.use("/featurevalue", require("./routes/FeatureValue"));
 
 // //Product Feature Value
-// app.use("/productfeature", require("./routes/ProductFeature"));
+app.use("/productfeature", require("./routes/ProductFeature"));
 
 // //Address
 // app.use("/address", require("./routes/Address"));
